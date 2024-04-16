@@ -41,6 +41,4 @@ Digite um valor:
 - O fatorial de um número inteiro não negativo n é o produto de todos os inteiros positivos menores ou iguais a n. O fatorial de 0 é definido como 1.
 - Este programa não lida com números muito grandes que possam exceder o intervalo suportado pelos tipos de dados inteiros em C.
 
----
 
-Espero que este README seja útil para quem quiser utilizar ou entender seu código!
