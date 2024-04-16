@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale (LC_ALL, "portuguese"); // Configura a localização para exibir mensagens em português
+    int i, n, resultado; // Declaração das variáveis para o número, o contador e o resultado do fatorial
+
+    printf ("Digite um valor:\n"); // Solicita ao usuário que insira um valor
+    scanf ("%d", &n); // Lê o valor fornecido pelo usuário e o armazena na variável 'n'
+
+    resultado = 1; // Inicializa o resultado como 1, pois o fatorial de 0 é 1
+
+    // Loop para calcular o fatorial de 'n'
+    for (i = n; i >= 1; i--) {
+        resultado *= i; // Multiplica o resultado pelo valor atual de 'i' (1 * 2 * 3 * ... * n)
+    }
+
+    // Verifica se 'n' é maior ou igual a zero
+    if (n >= 0) {
+        printf ("%d! = %d\n", n, resultado); // Se sim, imprime o fatorial de 'n'
+    } else {
+        printf ("Seu numero não pode ser menor que 0.\n"); // Se não, exibe uma mensagem de erro
+    }
+
+    return 0; // Retorna 0 para indicar que o programa foi executado com sucesso
+}
